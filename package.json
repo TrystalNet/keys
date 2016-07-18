@@ -1,0 +1,33 @@
+{
+  "name": "@trystal/keys",
+  "version": "1.0.0",
+  "description": "Key definitions (A,B, CTRLQ etc.) ",
+  "homepage": "https://github.com/TrystalNet/trist-text#readme",
+  "author": "Terence O'Neill <terry.oneill@trystal.net>",
+  "contributors": [],
+  "keywords": [
+    "trystal",
+    "linelo",
+    "keys"
+  ],
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TrystalNet/draftjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TrystalNet/draftjs/issues"
+  },
+  "license": "ISC",
+  "devDependencies": {
+  },
+  "scripts": {
+    "prod": "tsc -p tsconfig.json",
+    "test": "tsc -p ./test/tsconfig.json"
+  },
+  "directories": {
+  },
+  "dependencies": {
+  }
+}
