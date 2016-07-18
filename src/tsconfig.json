@@ -5,7 +5,7 @@
     "noImplicitAny": true,
     "suppressImplicitAnyIndexErrors": true,
     "strictNullChecks": true,
-    "declaration": false,
+    "declaration": true,
     "outDir": ".."
   },
   "files": [
