@@ -1,6 +1,6 @@
 {
   "name": "@trystal/keys",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Key definitions (A,B, CTRLQ etc.) ",
   "homepage": "https://github.com/TrystalNet/trist-text#readme",
   "author": "Terence O'Neill <terry.oneill@trystal.net>",
@@ -14,10 +14,10 @@
   "typings": "index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TrystalNet/draftjs.git"
+    "url": "git+https://github.com/TrystalNet/keys.git"
   },
   "bugs": {
-    "url": "https://github.com/TrystalNet/draftjs/issues"
+    "url": "https://github.com/TrystalNet/keys/issues"
   },
   "license": "ISC",
   "devDependencies": {
