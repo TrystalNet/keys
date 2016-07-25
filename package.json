@@ -10,8 +10,7 @@
     "linelo",
     "keys"
   ],
-  "main": "index.js",
-  "typings": "index.d.ts",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TrystalNet/keys.git"

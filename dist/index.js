@@ -1,4 +1,4 @@
-"use strict";
+export var KeyCodes;
 (function (KeyCodes) {
     KeyCodes[KeyCodes["UNDEF"] = 1] = "UNDEF";
     KeyCodes[KeyCodes["UP"] = 2] = "UP";
@@ -84,13 +84,12 @@
     KeyCodes[KeyCodes["ALTLEFT"] = 2206] = "ALTLEFT";
     KeyCodes[KeyCodes["ALTRIGHT"] = 2207] = "ALTRIGHT";
     KeyCodes[KeyCodes["CTRLK"] = 3000] = "CTRLK";
-})(exports.KeyCodes || (exports.KeyCodes = {}));
-var KeyCodes = exports.KeyCodes;
-function keyCodeOf(e) {
+})(KeyCodes || (KeyCodes = {}));
+export function keyCodeOf(e) {
     if (!e)
         return KeyCodes.UNDEF;
-    var altKey = e.altKey, shiftKey = e.shiftKey, ctrlKey = e.ctrlKey, metaKey = e.metaKey;
-    var which = e.keyCode || e.which || 0;
+    let { altKey, shiftKey, ctrlKey, metaKey } = e;
+    let which = e.keyCode || e.which || 0;
     if (altKey && ctrlKey)
         return KeyCodes.UNDEF;
     if (altKey && shiftKey)
@@ -160,7 +159,7 @@ function keyCodeOf(e) {
             case 40: return KeyCodes.CTRLDOWN;
             default:
                 if (which !== 17)
-                    console.log("unknown key combination ctrl+" + which);
+                    console.log(`unknown key combination ctrl+${which}`);
                 return KeyCodes.UNDEF;
         }
     switch (which) {
@@ -200,4 +199,3 @@ function keyCodeOf(e) {
         default: return KeyCodes.UNDEF;
     }
 }
-exports.keyCodeOf = keyCodeOf;
